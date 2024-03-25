@@ -1,0 +1,33 @@
+.sidenav {
+    width: 150px;
+    height: 100vh;
+    overflow: auto;
+    background: #666;
+    position: fixed; /* Sidenav itself can be absolutely positioned */
+    padding: 10px;
+}
+
+.drop-area {
+    margin-left: 150px; /* Adjust based on the sidenav width */
+    height: 100vh;
+    /* Create a linear gradient from left (black) to right (white) */
+    /* background: linear-gradient(to right, #000000 50%, #FFFFFF 50%);
+     */
+     background: linear-gradient(to right, 
+     #000000 33.33%, /* Black stops at 33.33% */
+     #808080 33.33%, #808080 66.66%, /* Gray from 33.33% to 66.66% */
+     #FFFFFF 66.66%); /* White starts from 66.66% */
+    position: relative;
+}
+
+.shape {
+    cursor: move;
+    width: 70px;
+    height: 70px;
+    margin: 10px auto; /* Center in the sidenav and space out vertically */
+    border-radius: 50%;
+    background-color: #000000; /* Default color, will be overridden by JS */
+    position: relative;
+    /* fill-opacity: 0.6; */
+    mix-blend-mode: lighten;
+}
